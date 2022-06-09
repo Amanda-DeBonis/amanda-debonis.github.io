@@ -1,0 +1,131 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+.header-logo{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+header ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header a{
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  color: black;
+}
+
+.header-menu-hamburger-menu{
+  display: none;
+}
+
+.header-menu-hamburger-ul li{
+  display: none;
+}
+
+@media(max-width:1150px){
+  
+  header{
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .header-logo::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-image: linear-gradient(to right, white, black, white);
+    margin: 0.5rem auto 0 auto;
+  }
+
+  header a{
+    padding: 0.5rem 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-menu-hamburger-ul li{
+    display: none;
+  }
+
+  .header-menu-hamburger-menu{
+    display: none;
+  }
+}
+
+@media(max-width:650px){
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-menu-principal{
+    display: none;
+  }
+
+  .header-logo{
+    max-width: 9ch;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .header-logo::after{
+    display: none;
+  }
+
+  header a{
+    background-color: rgb(255, 255, 255);
+    width: 5rem;
+    padding: 1rem 2rem;
+  }
+
+  .header-menu-hamburger-menu{
+    display: block;
+    margin: 0 0.5rem;
+    border: 0.1rem solid rgb(147, 147, 147);
+    padding: 1rem 2rem;
+  }
+
+  .header-menu-hamburger-menu:hover{
+    background-color: rgb(113, 113, 113);
+    color: white;
+  }
+
+  .header-menu-hamburger-nav:hover li{
+    display: block;
+  }
+    
+  .header-menu-hamburger-nav a{
+    color: rgb(41, 41, 41);
+    margin:0;
+    border: 0.1rem solid rgb(214, 214, 214);
+  }
+
+  .header-menu-hamburger-nav a:hover{
+    background-color: rgb(113, 113, 113);
+    color: white;
+  }
+
+  .header-menu-hamburger-nav{
+    position: relative;
+  }
+  
+  .header-menu-hamburger-ul{
+    position: absolute;    
+    right: 1rem;
+  }
+}

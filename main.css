@@ -1,0 +1,63 @@
+.main-apresentacao-h1{
+  background-image: linear-gradient(to top, white, rgb(243, 252, 249));
+}
+
+h1{
+  font-family: 'Bitter', serif;
+  font-weight: 200;
+  font-size: 7rem;
+  text-align: center;
+  padding: 2rem 0;
+  color: rgb(13, 74, 54);
+  margin: 0 auto;
+}
+
+.main-apresentacao-p{
+  text-align: center;
+  padding: 5rem 2rem;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.bonitas{
+  color:rgb(38, 150, 113);
+}
+
+@media(max-width:1150px){
+  main{
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  main h1{
+    font-size: 4rem;
+    padding: 4rem 0;
+  }
+  main p{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:650px){
+
+  main h1{
+    font-size: 3rem;
+    max-width: 14ch;    
+    padding: 4rem 0;
+  }
+
+  main p{
+    font-size: 1rem;
+  }
+
+  .main-apresentacao-p{
+    padding: 2rem;
+  }
+}
+
+@media(max-width:400px){
+  main h1{
+    font-size: 2rem;
+  }
+
+}
